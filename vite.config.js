@@ -8,7 +8,7 @@ export default defineConfig(async ({ command }) => {
     const needleConfig = await loadConfig();
 
     return {
-        base: "./",
+        base: "./ARQuantumFinal/",
         plugins: [
             basicSsl(),
             useGzip(needleConfig) ? viteCompression({ deleteOriginFile: true }) : null,
